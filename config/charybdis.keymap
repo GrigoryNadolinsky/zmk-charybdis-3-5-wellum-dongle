@@ -5,7 +5,6 @@
 #include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/outputs.h>
 
-/* ==== Индексация слоёв (сохранены названия и номера как у тебя) ==== */
 #define BASE 0
 #define NAV  1
 #define SYM  2
@@ -13,13 +12,14 @@
 #define SYS  4
 #define MOU  5
 #define SCR  6
-#define SNI  7
 
 / {
-    /* Твой трансформ матрицы сохранён */
-    chosen { zmk,matrix_transform = &five_column_transform; };
+    aliases {
+        five_column_transform = &default_transform;
+    }
 
-    /* ===================== COMBOS ===================== */
+    chosen { zmk,matrix_transform = &five_column_transform; }
+
     combos {
         compatible = "zmk,combos";
 
@@ -32,19 +32,19 @@
         left_click {
             bindings = <&mkp LCLK>;
             key-positions = <13 12>;
-            layers = <BASE MOU SCR SNI>;
+            layers = <BASE MOU SCR>;
         };
 
         right_click {
             bindings = <&mkp RCLK>;
             key-positions = <11 12>;
-            layers = <BASE MOU SCR SNI>;
+            layers = <BASE MOU SCR>;
         };
 
         middle_click {
             bindings = <&mkp MCLK>;
             key-positions = <11 12 13>;
-            layers = <BASE MOU SCR SNI>;
+            layers = <BASE MOU SCR>;
         };
 
         comma_vertical_combo {
@@ -65,12 +65,10 @@
         };
     };
 
-    /* ======== Слушатели трекбола (из шаблона, под твои слои) ======== */
     trackball_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
-        /* Движение мыши активно на всех, кроме слоя прокрутки */
-        layers = <BASE NAV SYM FUN SYS MOU SNI>;
+        layers = <BASE NAV SYM FUN SYS MOU>;
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
@@ -81,17 +79,14 @@
     trackball_scroll_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
-        /* Прокрутка активна на слое SCR */
         layers = <SCR>;
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_HWHEEL>;
         y-input-code = <INPUT_REL_WHEEL>;
         x-invert;
-        /* Скейлинг колёсика как в шаблоне */
         bindings = <&ib_horizontal_wheel_scaler 1 8 &ib_vertical_wheel_scaler 1 8>;
     };
 
-    /* Скейлеры из шаблона для колеса */
     ib_horizontal_wheel_scaler: ib_horizontal_wheel_scaler {
         compatible = "zmk,input-behavior-scaler";
         #binding-cells = <2>;
@@ -106,7 +101,6 @@
         input-code = <INPUT_REL_WHEEL>;
     };
 
-    /* ===================== ПОВЕДЕНИЯ ===================== */
     behaviors {
         ht: ht {
             compatible = "zmk,behavior-hold-tap";
@@ -165,7 +159,6 @@
         };
     };
 
-    /* ===================== МАКРОСЫ ===================== */
     macros {
         compatible = "zmk,macros";
 
@@ -227,7 +220,6 @@
         };
     };
 
-    /* ===================== КАРТА КЛАВИШ (твои слои) ===================== */
     keymap {
         compatible = "zmk,keymap";
 
@@ -293,29 +285,5 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
-
-        Sniper {
-            label = "Sni";
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-            >;
-        };
     };
-};
-
-/* ====== Настройка ускорений движения и прокрутки (сохранено) ====== */
-&mmv {
-    x-input-code = <INPUT_REL_X>;
-    y-input-code = <INPUT_REL_Y>;
-    time-to-max-speed-ms = <300>;
-    acceleration-exponent = <3>;
-};
-
-&msc {
-    x-input-code = <INPUT_REL_HWHEEL>;
-    y-input-code = <INPUT_REL_WHEEL>;
-    time-to-max-speed-ms = <1>;
-    acceleration-exponent = <3>;
 };
