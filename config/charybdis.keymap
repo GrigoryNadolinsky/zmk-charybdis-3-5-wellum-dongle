@@ -15,11 +15,8 @@
 #define SCR  6
 
 / {
-    aliases {
-        five_column_transform = &default_transform;
-    };
-
-    chosen { zmk,matrix_transform = &five_column_transform; };
+    
+    chosen { zmk,matrix_transform = &default_transform; };
 
     combos {
         compatible = "zmk,combos";
@@ -288,3 +285,4 @@
         };
     };
 };
+
