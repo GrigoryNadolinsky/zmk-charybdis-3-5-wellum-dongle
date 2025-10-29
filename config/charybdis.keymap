@@ -4,6 +4,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/ext_power.h>
 
 #define BASE 0
 #define NAV  1
@@ -16,9 +17,9 @@
 / {
     aliases {
         five_column_transform = &default_transform;
-    }
+    };
 
-    chosen { zmk,matrix_transform = &five_column_transform; }
+    chosen { zmk,matrix_transform = &five_column_transform; };
 
     combos {
         compatible = "zmk,combos";
@@ -84,7 +85,7 @@
         x-input-code = <INPUT_REL_HWHEEL>;
         y-input-code = <INPUT_REL_WHEEL>;
         x-invert;
-        bindings = <&ib_horizontal_wheel_scaler 1 8 &ib_vertical_wheel_scaler 1 8>;
+        bindings = <&ib_horizontal_wheel_scaler 1 6 &ib_vertical_wheel_scaler 1 8>;
     };
 
     ib_horizontal_wheel_scaler: ib_horizontal_wheel_scaler {
