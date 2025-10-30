@@ -228,7 +228,7 @@
             label = "Bas";
             bindings = <
 &kp Q        &kp W        &kp E        &kp R      &ht RA(T) T        &kp Y          &kp U         &ht RA(I) I         &kp O                   &kp P      &ht LGUI A       &ht LALT S
-&ht LCTRL D  &ht LSHFT F  &kp G        &kp H      &ht LSHFT J        &ht LCTRL K    &ht LALT L    &ht LGUI SEMICOLON  &&lt SCR Z              &kp X      &kp C            &kp V
+&ht LCTRL D  &ht LSHFT F  &kp G        &kp H      &ht LSHFT J        &ht LCTRL K    &ht LALT L    &ht LGUI SEMICOLON  &lt MOU Z               &kp X      &kp C            &kp V
 &kp B        &kp N        &ht RA(M) M  &kp COMMA  &kp DOT            &lt SCR SLASH      &lt SCR ESCAPE  &lt SYM TAB           &double_space_to_comma  &kp ENTER  &lt NAV BACKSPACE
             >;
         };
@@ -297,6 +297,7 @@
         };
     };
 };
+
 
 
 
