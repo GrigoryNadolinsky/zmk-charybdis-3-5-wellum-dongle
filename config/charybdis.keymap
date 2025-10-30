@@ -15,6 +15,7 @@
 #define SCR  6
 
 / {
+    
     chosen { zmk,matrix_transform = &default_transform; };
 
     combos {
@@ -62,14 +63,6 @@
         };
     };
 
-    /* Автоподъём мышиного слоя: sticky (снимется после первого действия) */
-    ib_mouse_layer_sticky: ib_mouse_layer_sticky {
-        compatible = "zmk,input-behavior-inject";
-        #binding-cells = <0>;
-        bindings = <&sl MOU>;
-    };
-
-    /* Движение трекбола -> поднимаем MOU для кликов/drag */
     trackball_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
@@ -78,13 +71,9 @@
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
         scale-multiplier = <1>;
-        scale-divisor  = <1>;
-
-        /* Триггерим по X и по Y */
-        bindings = <&ib_mouse_layer_sticky &ib_mouse_layer_sticky>;
+        scale-divisor = <1>;
     };
 
-    /* В SCR трекбол превращается в колёсико прокрутки (без автослоя) */
     trackball_scroll_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
@@ -93,22 +82,20 @@
         x-input-code = <INPUT_REL_HWHEEL>;
         y-input-code = <INPUT_REL_WHEEL>;
         y-invert;
-        bindings = <&ib_horizontal_wheel_scaler 1 6
-                    &ib_vertical_wheel_scaler   1 8>;
+        bindings = <&ib_horizontal_wheel_scaler 1 6 &ib_vertical_wheel_scaler 1 8>;
     };
 
-    /* Скалеры прокрутки */
     ib_horizontal_wheel_scaler: ib_horizontal_wheel_scaler {
         compatible = "zmk,input-behavior-scaler";
         #binding-cells = <2>;
-        evt-type  = <INPUT_EV_REL>;
+        evt-type = <INPUT_EV_REL>;
         input-code = <INPUT_REL_HWHEEL>;
     };
 
     ib_vertical_wheel_scaler: ib_vertical_wheel_scaler {
         compatible = "zmk,input-behavior-scaler";
         #binding-cells = <2>;
-        evt-type  = <INPUT_EV_REL>;
+        evt-type = <INPUT_EV_REL>;
         input-code = <INPUT_REL_WHEEL>;
     };
 
@@ -298,3 +285,5 @@
         };
     };
 };
+
+
