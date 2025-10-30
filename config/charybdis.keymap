@@ -63,10 +63,10 @@
         };
     };
 
-    ib_mouse_layer_timer: ib_mouse_layer_timer {
-        compatible = "zmk,input-behavior-layer-timer";
-        /* <layer timeout_ms> */
-        #binding-cells = <2>;
+    ib_mouse_layer_oneshot: ib_mouse_layer_oneshot {
+        compatible = "zmk,input-behavior-inject";
+        #binding-cells = <0>;
+        bindings = <&osl MOU>;
     };
 
     trackball_listener {
@@ -78,7 +78,7 @@
         y-input-code = <INPUT_REL_Y>;
         scale-multiplier = <1>;
         scale-divisor = <1>;
-        bindings = <&ib_mouse_layer_timer MOU 400>;
+        bindings = <&ib_mouse_layer_oneshot &ib_mouse_layer_oneshot>;
     };
 
     trackball_scroll_listener {
@@ -292,6 +292,7 @@
         };
     };
 };
+
 
 
 
