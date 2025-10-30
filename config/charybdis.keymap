@@ -55,7 +55,13 @@
         middle_click2 {
             bindings = <&mkp MCLK>;
             key-positions = <2 3>;
-            layers = <BASE aMOU SCR>;
+            layers = <BASE aMOU SCR MOU>;
+        };
+
+        middle_click_mouse_layer {
+            bindings = <&mkp MCLK>;
+            key-positions = <12 13>;
+            layers = <MOU>;
         };
 
         bootloader_dongle_combo {
@@ -297,6 +303,7 @@
         };
     };
 };
+
 
 
 
