@@ -205,18 +205,25 @@
             bindings = <&kp LS(LEFT_ALT)>;
         };
 
-        greenatom: greenatom {
+        pswd: pswd {
             compatible = "zmk,behavior-macro";
             label = "GREENATOM";
             #binding-cells = <0>;
-            bindings = <&kp LS(G) &kp R &kp E &kp E &kp N &kp A &kp T &kp O &kp M &kp LS(G) &kp R &kp EXCL &kp G &kp O &kp R &kp Y &kp NUMBER_4 &kp ENTER>;
+            bindings = <&kp LS(G) &kp R &kp E &kp E &kp N &kp A &kp T &kp O &kp M &kp LS(G) &kp R &kp EXCL &kp G &kp O &kp R &kp Y &kp NUMBER_4>;
         };
 
-        greenatom_aszi: greenatom_aszi {
+        pswd_enter: pswd_enter {
+            compatible = "zmk,behavior-macro";
+            label = "GREENATOM";
+            #binding-cells = <0>;
+            bindings = <&pswd &kp ENTER>;
+        };
+
+        lgn_pswd_enter: lgn_pswd_enter {
             compatible = "zmk,behavior-macro";
             label = "GREENATOM_ASZI";
             #binding-cells = <0>;
-            bindings = <&kp LS(G) &kp LS(A) &kp LS(N) &kp A &kp D &kp O &kp L &kp I &kp N &kp S &kp K &kp Y &kp TAB &greenatom>;
+            bindings = <&kp LS(G) &kp LS(A) &kp LS(N) &kp A &kp D &kp O &kp L &kp I &kp N &kp S &kp K &kp Y &kp TAB &pswd_enter>;
         };
 
         double_space_to_comma_macro: doublle_spase_dot {
@@ -303,6 +310,7 @@
         };
     };
 };
+
 
 
 
