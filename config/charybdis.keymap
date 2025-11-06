@@ -120,10 +120,10 @@
             flavor = "tap-preferred";
         };
 
-        ht_greenatom: ht_greenatom {
+        ht_pswd: ht_pswd {
             compatible = "zmk,behavior-hold-tap";
-            label = "HT_GREENATOM";
-            bindings = <&greenatom>, <&bluetooth_macro_1>;
+            label = "HT_PSWD";
+            bindings = <&pswd>, <&bluetooth_macro_1>;
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <300>;
@@ -131,10 +131,21 @@
             require-prior-idle-ms = <100>;
         };
 
-        ht_greenatom_aszi: ht_greenatom_aszi {
+        ht_pswd_enter: ht_pswd_enter {
             compatible = "zmk,behavior-hold-tap";
-            label = "HT_GREENATOM_ASZI";
-            bindings = <&greenatom_aszi>, <&dongle_macro>;
+            label = "HT_PSWD_ENTER";
+            bindings = <&pswd_enter>, <&bluetooth_macro_2>;
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+            quick-tap-ms = <100>;
+            require-prior-idle-ms = <100>;
+            flavor = "tap-preferred";
+        };
+
+        ht_lgn_pswd_enter: ht_lgn_pswd_enter {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT_LGN_PSWD_ENTER";
+            bindings = <&lgn_pswd_enter>, <&dongle_macro>;
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <300>;
@@ -310,6 +321,7 @@
         };
     };
 };
+
 
 
 
