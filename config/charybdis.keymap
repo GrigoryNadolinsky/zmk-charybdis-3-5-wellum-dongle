@@ -32,8 +32,8 @@
             bindings = <&mkp LCLK>;
             key-positions = <12 13>;
             layers = <BASE aMOU SCR MOU>;
-            timeout-ms = <30>;
-            require-prior-idle-ms = <20>;
+            timeout-ms = <20>;
+            require-prior-idle-ms = <10>;
         };
 
         right_click {
@@ -315,6 +315,7 @@
         };
     };
 };
+
 
 
 
