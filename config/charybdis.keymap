@@ -44,6 +44,10 @@
             bindings = <&mkp RCLK>;
             key-positions = <22 23>;
             layers = <BASE aMOU SCR MOU>;
+            timeout = <30>;
+            idle = <20>;
+            require_prior = <false>;
+            slow_release = <false>;
         };
 
         middle_click {
@@ -321,4 +325,5 @@
         };
     };
 };
+
 
