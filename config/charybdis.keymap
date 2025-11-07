@@ -24,7 +24,7 @@
 
         changing_the_language {
             bindings = <&switch_language>;
-            key-positions = <16 12 13 17>;
+            key-positions = <12 13 16 17>;
             layers = <BASE>;
         };
 
@@ -40,22 +40,24 @@
             bindings = <&mkp RCLK>;
             key-positions = <22 23>;
             layers = <BASE aMOU SCR MOU>;
-            timeout-ms = <30>;
-            require-prior-idle-ms = <20>;
+            timeout-ms = <20>;
+            require-prior-idle-ms = <10>;
         };
 
         middle_click {
             bindings = <&mkp MCLK>;
             key-positions = <2 3>;
             layers = <BASE aMOU SCR MOU>;
-            timeout-ms = <30>;
-            require-prior-idle-ms = <20>;
+            timeout-ms = <20>;
+            require-prior-idle-ms = <10>;
         };
 
         middle_click_mouse_layer {
             bindings = <&mkp MCLK>;
             key-positions = <12 13>;
             layers = <MOU>;
+            timeout-ms = <20>;
+            require-prior-idle-ms = <10>;
         };
 
         bootloader_dongle_combo {
@@ -315,6 +317,7 @@
         };
     };
 };
+
 
 
 
