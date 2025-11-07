@@ -26,6 +26,8 @@
             bindings = <&switch_language>;
             key-positions = <12 13 16 17>;
             layers = <BASE>;
+            timeout-ms = <100>;
+            require-prior-idle-ms = <50>;
         };
 
         left_click {
