@@ -36,25 +36,11 @@
 
         right_click {
             bindings = <&mkp RCLK>;
-            key-positions = <11 12>;
-            layers = <BASE aMOU SCR MOU>;
-        };
-
-        right_click2 {
-            bindings = <&mkp RCLK>;
             key-positions = <22 23>;
             layers = <BASE aMOU SCR MOU>;
-            timeout = <30>;
-            idle = <20>;
         };
 
         middle_click {
-            bindings = <&mkp MCLK>;
-            key-positions = <11 12 13>;
-            layers = <BASE aMOU SCR MOU>;
-        };
-
-        middle_click2 {
             bindings = <&mkp MCLK>;
             key-positions = <2 3>;
             layers = <BASE aMOU SCR MOU>;
@@ -323,6 +309,7 @@
         };
     };
 };
+
 
 
 
