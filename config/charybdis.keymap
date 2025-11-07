@@ -227,19 +227,14 @@
             compatible = "zmk,behavior-macro";
             label = "pswd_enter";
             #binding-cells = <0>;
-            bindings = <&pswd &kp ENTER>;
+            bindings = <&kp LS(G) &kp R &kp E &kp E &kp N &kp A &kp T &kp O &kp M &kp LS(G) &kp R &kp EXCL &kp G &kp O &kp R &kp Y &kp NUMBER_4 &kp ENTER>;
         };
 
         lgn_pswd_enter: lgn_pswd_enter {
             compatible = "zmk,behavior-macro";
             label = "login_pswd_enter";
             #binding-cells = <0>;
-            bindings = <
-                &kp LS(G) &kp LS(A) &kp LS(N) &kp A &kp D &kp O &kp L &kp I &kp N &kp S &kp K &kp Y
-                &kp TAB
-                &kp LS(G) &kp R &kp E &kp E &kp N &kp A &kp T &kp O &kp M &kp LS(G) &kp R &kp EXCL &kp G &kp O &kp R &kp Y &kp NUMBER_4
-                &kp ENTER
-            >;
+            bindings = <&kp LS(G) &kp LS(A) &kp LS(N) &kp A &kp D &kp O &kp L &kp I &kp N &kp S &kp K &kp Y &kp TAB &pswd_enter>;
         };
 
         double_space_to_comma_macro: doublle_spase_dot {
@@ -326,3 +321,4 @@
         };
     };
 };
+
