@@ -181,10 +181,7 @@
             #binding-cells = <2>;
             bindings = <&mo>, <&kp>;
             tapping-term-ms = <500>;
-            quick-tap-ms = <150>;
-            require-prior-idle-ms = <100>;
-            flavor = "hold-preferred";
-            hold-trigger-on-release;
+            quick-tap-ms = <500>; require-prior-idle-ms = <100>; flavor = "tap-preferred";
         };
     };
 
@@ -332,6 +329,7 @@
         };
     };
 };
+
 
 
 
