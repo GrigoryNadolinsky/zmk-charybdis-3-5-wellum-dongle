@@ -68,6 +68,11 @@
             layers = <BASE>;
         };
 
+        sys_reset_combo {
+            bindings = <&sys_reset>;
+            key-positions = <0 1 2 3>;
+            layers = <BASE>;
+        };
     };
 
     trackball_listener {
@@ -314,7 +319,7 @@
             label = "Scr";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&mkp RCLK  &mkp LCLK  &trans  &trans  &mkp LCLK  &mkp RCLK    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
@@ -324,11 +329,12 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &mkp RCLK  &mkp LCLK  &trans  &trans  &mkp LCLK  &mkp RCLK    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &mo Scr  &trans  &trans  &trans  &trans
             >;
         };
     };
 };
+
 
 
 
