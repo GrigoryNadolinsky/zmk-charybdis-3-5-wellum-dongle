@@ -329,27 +329,8 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &mkp RCLK  &mkp LCLK  &trans  &trans  &mkp LCLK  &mkp RCLK    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &mo Scr  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &mo SCR  &trans  &trans  &trans  &trans
             >;
         };
     };
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
