@@ -14,6 +14,7 @@
 #define aMOU  5
 #define SCR  6
 #define MOU  7
+#define GAME  8
 
 / {
     
@@ -328,6 +329,15 @@
             label = "Mou";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&mkp RCLK  &mkp LCLK  &trans  &trans  &mkp LCLK  &mkp RCLK    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &mo SCR  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        Game {
+            label = "Gam";
+            bindings = <
+&trans  &trans  &kp W  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &mkp RCLK  &mkp LCLK  &trans  &trans  &mkp LCLK  &mkp RCLK    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &mo SCR  &trans  &trans  &trans  &trans
             >;
