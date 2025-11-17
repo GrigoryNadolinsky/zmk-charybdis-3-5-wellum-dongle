@@ -251,11 +251,11 @@
             bindings = <&kp LS(G) &kp LS(A) &kp LS(N) &kp A &kp D &kp O &kp L &kp I &kp N &kp S &kp K &kp Y &kp TAB &pswd_enter>;
         };
 
-        double_space_to_comma_macro: doublle_spase_dot {
+        double_space_to_comma_macro: double_spase_dot {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp RA(COMMA) &kp SPACE>;
-            label = "DOUBLLE_SPASE_DOT";
+            label = "DOUBLE_SPASE_DOT";
         };
     };
 
@@ -345,4 +345,5 @@
         };
     };
 };
+
 
