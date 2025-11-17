@@ -69,10 +69,16 @@
             layers = <BASE>;
         };
 
-        sys_reset_combo {
-            bindings = <&sys_reset>;
-            key-positions = <0 1 2 3>;
+        game_layer_in {
+            bindings = <&to GAME>;
+            key-positions = <30 31 32>;
             layers = <BASE>;
+        };
+
+        game_layer_out {
+            bindings = <&to BASE>;
+            key-positions = <30 31 32>;
+            layers = <GAME>;
         };
     };
 
@@ -344,6 +350,7 @@
         };
     };
 };
+
 
 
 
