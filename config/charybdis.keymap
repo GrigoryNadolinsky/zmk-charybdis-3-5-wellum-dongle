@@ -337,12 +337,13 @@
         Game {
             label = "Gam";
             bindings = <
-&kp F  &trans  &kp W  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &kp SPACE  &kp A
-&kp S  &kp D  &trans  &trans  &mkp LCLK  &mkp MCLK    &mkp RCLK  &kp F  &kp SHIFT  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &none  &kp SHIFT  &trans  &kp SPACE  &trans
+&trans  &trans  &kp W  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&mkp RCLK  &mkp LCLK  &trans  &trans  &mkp LCLK  &mkp RCLK    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &mo SCR  &trans  &trans  &trans  &trans
             >;
         };
     };
 };
+
 
 
