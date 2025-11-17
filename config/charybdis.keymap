@@ -339,11 +339,12 @@
             bindings = <
 &kp F  &trans  &kp W  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &kp SPACE  &kp A
 &kp S  &kp D  &trans  &trans  &mkp LCLK  &mkp MCLK    &mkp RCLK  &kp F  &kp SHIFT  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &mo SCR  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &none  &kp SHIFT  &none  &trans  &kp SPACE
             >;
         };
     };
 };
+
 
 
 
