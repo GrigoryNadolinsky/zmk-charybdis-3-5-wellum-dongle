@@ -85,7 +85,7 @@
     trackball_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
-        layers = <BASE NAV SYM FUN SYS aMOU MOU>;
+        layers = <BASE NAV SYM FUN SYS aMOU MOU GAME>;
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
@@ -350,6 +350,7 @@
         };
     };
 };
+
 
 
 
