@@ -67,6 +67,8 @@
             bindings = <&bootloader>;
             key-positions = <31 32 33 34>;
             layers = <BASE>;
+            timeout-ms = <400>;
+            require-prior-idle-ms = <200>;
         };
 
         game_layer_in {
@@ -350,6 +352,7 @@
         };
     };
 };
+
 
 
 
