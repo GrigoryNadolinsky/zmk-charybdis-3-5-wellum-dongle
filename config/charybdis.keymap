@@ -250,9 +250,9 @@
             bindings = <&kp LS(G) &kp R &kp E &kp E &kp N &kp A &kp T &kp O &kp M &kp LS(G) &kp R &kp EXCL &kp G &kp O &kp R &kp Y &kp NUMBER_4 &kp ENTER>;
         };
 
-        win_pswd_enter: pswd_enter {
+        win_pswd_enter: win_pswd_enter {
             compatible = "zmk,behavior-macro";
-            label = "pswd_enter";
+            label = "win_pswd_enter";
             #binding-cells = <0>;
             bindings = <&kp LA(LS(DELETE)) &kp LS(G) &kp R &kp E &kp E &kp N &kp A &kp T &kp O &kp M &kp LS(G) &kp R &kp EXCL &kp G &kp O &kp R &kp Y &kp NUMBER_4 &kp ENTER>;
         };
@@ -357,6 +357,7 @@
         };
     };
 };
+
 
 
 
