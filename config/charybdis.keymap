@@ -86,12 +86,6 @@
             key-positions = <30 31 32>;
             layers = <GAME>;
         };
-
-
-        combo_mo_arrow {
-    key-positions = <0 1>;
-    bindings = <&mo GAME>;
-};
     };
 
     trackball_listener {
@@ -362,6 +356,7 @@
         };
     };
 };
+
 
 
 
