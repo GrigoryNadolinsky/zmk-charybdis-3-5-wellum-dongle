@@ -67,8 +67,12 @@
             bindings = <&bootloader>;
             key-positions = <31 32 33 34>;
             layers = <BASE>;
-            timeout-ms = <400>;
-            require-prior-idle-ms = <200>;
+        };
+
+        bootloader_dongle_2_combo {
+            bindings = <&bootloader>;
+            key-positions = <30 31 32 33 34>;
+            layers = <BASE>;
         };
 
         game_layer_in {
@@ -352,6 +356,7 @@
         };
     };
 };
+
 
 
 
