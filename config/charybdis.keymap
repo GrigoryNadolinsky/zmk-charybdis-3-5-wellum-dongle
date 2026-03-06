@@ -55,8 +55,8 @@
             layers = <BASE>;
         };
 
-        /* left_click_old {
-            bindings = <&mkp LCLK>;
+        left_click_old {
+            bindings = <&none>;
             key-positions = <12 13>;
             layers = <BASE aMOU SCR>;
             timeout-ms = <20>;
@@ -64,7 +64,7 @@
         };
 
         right_click_old {
-            bindings = <&mkp RCLK>;
+            bindings = <&none>;
             key-positions = <22 23>;
             layers = <BASE aMOU SCR>;
             timeout-ms = <20>;
@@ -72,14 +72,14 @@
         };
 
         middle_click_old {
-            bindings = <&mkp MCLK>;
+            bindings = <&none>;
             key-positions = <2 3>;
             layers = <BASE aMOU SCR>;
             timeout-ms = <20>;
             require-prior-idle-ms = <10>;
         };
 
-        middle_click_mouse_layer {
+        /* middle_click_mouse_layer {
             bindings = <&mkp MCLK>;
             key-positions = <12 13>;
             layers = <MOU>;
@@ -120,7 +120,7 @@
     trackball_scroll_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
-        layers = <SCR NAV>;
+        layers = <NAV>;
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_HWHEEL>;
         y-input-code = <INPUT_REL_WHEEL>;
@@ -374,6 +374,7 @@
         };
     };
 };
+
 
 
 
