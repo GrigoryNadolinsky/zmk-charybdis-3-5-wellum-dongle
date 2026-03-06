@@ -51,7 +51,7 @@
 
         bootloader_dongle_combo {
             bindings = <&bootloader>;
-            key-positions = <30 31 32 33 34>;
+            key-positions = <31 32 33 34>;
             layers = <BASE>;
         };
 
@@ -89,7 +89,7 @@
 
         bootloader_dongle_combo_old {
             bindings = <&bootloader>;
-            key-positions = <31 32 33 34>;
+            key-positions = <30 31 32 33 34>;
             layers = <BASE>;
         };
 
@@ -374,6 +374,7 @@
         };
     };
 };
+
 
 
 
