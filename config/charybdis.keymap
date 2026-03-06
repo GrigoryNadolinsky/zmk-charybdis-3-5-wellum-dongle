@@ -34,19 +34,19 @@
         left_click {
             bindings = <&mkp LCLK>;
             key-positions = <2 13>;
-            layers = <BASE NAV>;
+            layers = <BASE SCR>;
         };
 
         right_click {
             bindings = <&mkp RCLK>;
             key-positions = <2 23>;
-            layers = <BASE NAV>;
+            layers = <BASE SCR>;
         };
 
         middle_click {
             bindings = <&mkp MCLK>;
             key-positions = <12 23>;
-            layers = <BASE NAV>;
+            layers = <BASE SCR>;
         };
 
         #left_click_old {
@@ -120,7 +120,7 @@
     trackball_scroll_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
-        layers = <NAV>;
+        layers = <SCR>;
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_HWHEEL>;
         y-input-code = <INPUT_REL_WHEEL>;
@@ -374,6 +374,7 @@
         };
     };
 };
+
 
 
 
