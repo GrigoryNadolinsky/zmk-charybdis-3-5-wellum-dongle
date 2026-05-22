@@ -55,13 +55,15 @@
             layers = <BASE>;
         };
 
-        /* middle_click_mouse_layer {
+        /*
+        middle_click_mouse_layer {
             bindings = <&mkp MCLK>;
             key-positions = <12 13>;
             layers = <MOU>;
             timeout-ms = <20>;
             require-prior-idle-ms = <10>;
         };
+        */
     };
 
     trackball_listener {
