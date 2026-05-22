@@ -18,7 +18,6 @@
 
 / {
 
-    
     chosen { zmk,matrix_transform = &default_transform; };
 
     combos {
@@ -40,13 +39,13 @@
 
         right_click {
             bindings = <&mkp RCLK>;
-            key-positions = <2 23>;
+            key-positions = <12 23>;
             layers = <BASE NAV>;
         };
 
         middle_click {
             bindings = <&mkp MCLK>;
-            key-positions = <12 23>;
+            key-positions = <2 23>;
             layers = <BASE NAV>;
         };
 
@@ -56,30 +55,6 @@
             layers = <BASE>;
         };
 
-        left_click_old {
-            bindings = <&none>;
-            key-positions = <12 13>;
-            layers = <BASE aMOU SCR>;
-            timeout-ms = <20>;
-            require-prior-idle-ms = <10>;
-        };
-
-        right_click_old {
-            bindings = <&none>;
-            key-positions = <22 23>;
-            layers = <BASE aMOU SCR>;
-            timeout-ms = <20>;
-            require-prior-idle-ms = <10>;
-        };
-
-        middle_click_old {
-            bindings = <&none>;
-            key-positions = <2 3>;
-            layers = <BASE aMOU SCR>;
-            timeout-ms = <20>;
-            require-prior-idle-ms = <10>;
-        };
-
         /* middle_click_mouse_layer {
             bindings = <&mkp MCLK>;
             key-positions = <12 13>;
@@ -87,24 +62,6 @@
             timeout-ms = <20>;
             require-prior-idle-ms = <10>;
         };
-
-        bootloader_dongle_combo_old {
-            bindings = <&bootloader>;
-            key-positions = <30 31 32 33 34>;
-            layers = <BASE>;
-        };
-
-        game_layer_in {
-            bindings = <&to GAME>;
-            key-positions = <30 31 32>;
-            layers = <BASE>;
-        };
-
-        game_layer_out {
-            bindings = <&to BASE>;
-            key-positions = <30 31 32>;
-            layers = <GAME>;
-        }; */
     };
 
     trackball_listener {
@@ -272,7 +229,7 @@
             compatible = "zmk,behavior-macro";
             label = "pswd_enter";
             #binding-cells = <0>;
-            bindings = <&kp LS(G) &kp R &kp E &kp E &kp N &kp A &kp T &kp O &kp M &kp LS(G) &kp R &kp EXCL &kp G &kp O &kp R &kp Y &kp NUMBER_8 &kp ENTER>;
+            bindings = <&kp LS(G) &kp R &kp E &kp E &kp N &kp A &kp T &kp O &kp M &kp LS(G) &kp R &kp EXCL &kp G &kp O &kp R &kp Y &kp NUMBER_9 &kp ENTER>;
         };
 
         lgn_pswd_enter: lgn_pswd_enter {
