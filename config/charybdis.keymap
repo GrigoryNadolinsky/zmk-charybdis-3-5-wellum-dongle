@@ -281,9 +281,13 @@
         Symbol {
             label = "Sym";
             bindings = <
-&kp RA(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)          &kp LS(NUMBER_4)           &ht LS(N5) LS(NUMBER_6)  &kp RA(BACKSLASH)     &kp RA(LEFT_BRACKET)  &kp RA(RIGHT_BRACKET)   &kp RA(LS(SEMICOLON))  &kp RA(SINGLE_QUOTE)  &kp BACKSLASH            &kp LS(NUMBER_8)
-&kp MINUS         &kp LS(EQUAL)     &kp EQUAL                 &kp LS(NUMBER_7)           &kp LS(NUMBER_9)         &kp LS(NUMBER_0)      &kp RA(SEMICOLON)     &kp RA(LS(APOSTROPHE))  &kp RA(MINUS)          &kp LS(NUMBER_1)      &triple_dot_to_ellipsis  &kp RA(SLASH)
-&kp RA(COMMA)     &kp LS(MINUS)     &kp RA(LS(LEFT_BRACKET))  &kp RA(LS(RIGHT_BRACKET))  &kp RA(LS(COMMA))        &kp RA(LS(PERIOD))    &none                 &none                   &bootloader            &trans                 &lt FUN DELETE
+
+            &kp RA(NUMBER_1)    &kp LS(NUMBER_2)    &kp LS(NUMBER_3)           &kp LS(NUMBER_4)    &ht LS(N5) LS(NUMBER_6)            &kp RA(BACKSLASH)    &kp RA(LEFT_BRACKET)        &kp RA(RIGHT_BRACKET)        &kp RA(LS(SEMICOLON))    &kp RA(SINGLE_QUOTE)
+            &kp BACKSLASH       &kp LS(NUMBER_8)    &kp MINUS                  &kp LS(EQUAL)       &kp EQUAL                          &kp LS(NUMBER_7)     &kp LS(NUMBER_9)            &kp LS(NUMBER_0)             &kp RA(SEMICOLON)        &kp RA(LS(APOSTROPHE))
+            &kp RA(MINUS)       &kp LS(NUMBER_1)    &triple_dot_to_ellipsis    &kp RA(SLASH)       &kp RA(COMMA)                      &kp LS(MINUS)        &kp RA(LS(LEFT_BRACKET))    &kp RA(LS(RIGHT_BRACKET))    &kp RA(LS(COMMA))        &kp RA(LS(PERIOD))
+
+                                                    &none                      &none               &bootloader                        &trans               &lt FUN DELETE
+            
             >;
         };
 
