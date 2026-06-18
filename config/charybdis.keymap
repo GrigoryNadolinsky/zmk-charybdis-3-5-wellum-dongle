@@ -291,9 +291,13 @@
         System {
             label = "Sys";
             bindings = <
-&none  &none  &none        &none       &none         &bt BT_CLR_ALL    &bt BT_PRV    &bt BT_NXT  &bt BT_CLR  &none  &none  &none
-&none  &none  &none        &none       &bt BT_SEL 0  &bt BT_SEL 1      &bt BT_SEL 2  &none       &none       &none  &none  &none
-&none  &none  &bootloader  &sys_reset  &none         &none             &none         &none       &none       &none  &none
+
+            &none        &none        &none        &none        &none                               &bt BT_CLR_ALL     &bt BT_PRV   &bt BT_NXT   &bt BT_CLR   &none
+            &none        &none        &none        &none        &bt BT_SEL 0                        &bt BT_SEL 1       &bt BT_SEL 2 &none        &none        &none
+            &none        &none        &bootloader  &sys_reset   &none                               &none              &none        &none        &none        &none
+        
+                                      &none        &none        &none                               &none              &none        &none
+            
             >;
         };
 
@@ -305,7 +309,7 @@
             &ht LGUI A   &ht LALT S   &automouse_clics LCTRL RCLK  &automouse_clics LEFT_SHIFT LCLK  &kp G                                 &kp H       &automouse_clics LEFT_SHIFT LCLK  &automouse_clics LCTRL RCLK  &ht LALT L   &ht LGUI SEMICOLON
             &kp Z        &kp X        &kp C                        &kp V                             &kp B                                 &kp N       &ht RA(M) M                       &kp COMMA                    &kp DOT      &kp SLASH
         
-                                      &lt SCR ESC                  &lt SYM TAB                       &double_space_to_comma                &kp ENTER   &lt NAV BACKSPACE                 &none
+                                      &lt SCR ESC                  &lt SYM TAB                       &double_space_to_comma                &kp ENTER   &lt NAV BACKSPACE
             
             >;
         };
