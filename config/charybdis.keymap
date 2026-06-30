@@ -151,7 +151,7 @@
             tapping-term-ms = <250>;
         };
 
-        lt_slow_ht: lt_slow_ht {
+        lt_slow: lt_slow {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             bindings = <&mo>, <&kp>;
@@ -235,9 +235,9 @@
             label = "Bas";
             bindings = <
 
-            &kp Q                &kp W         &kp E          &kp R          &ht RA(T) T                       &kp Y        &kp U                &ht RA(I) I    &kp O         &kp P
-            &ht LGUI A           &ht LALT S    &ht LCTRL D    &ht LSHFT F    &kp G                             &kp H        &ht LSHFT J          &ht LCTRL K    &ht LALT L    &ht LGUI SEMICOLON
-            &lt_slow_ht MOU Z    &kp X         &kp C          &kp V          &kp B                             &kp N        &ht RA(M) M          &kp COMMA      &kp DOT       &lt_slow_ht SCR SLASH
+            &kp Q         &kp W         &kp E          &kp R          &ht RA(T) T                       &kp Y        &kp U                &ht RA(I) I    &kp O         &kp P
+            &ht LGUI A    &ht LALT S    &ht LCTRL D    &ht LSHFT F    &kp G                             &kp H        &ht LSHFT J          &ht LCTRL K    &ht LALT L    &ht LGUI SEMICOLON
+            &kp Z         &kp X         &kp C          &kp V          &kp B                             &kp N        &ht RA(M) M          &kp COMMA      &kp DOT       &lt_slow MOU SLASH
 
                                                &kp ESCAPE     &lt SYM TAB    &double_space_to_comma            &kp ENTER    &lt NAV BACKSPACE    
             
