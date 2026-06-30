@@ -117,7 +117,7 @@
         ht_short_pswd: ht_short_pswd {
             compatible = "zmk,behavior-hold-tap";
             label = "HT_SHORT_PSWD";
-            bindings = <&none>, <&short_pswd>;
+            bindings = <&short_pswd>, <&none>;
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <300>;
