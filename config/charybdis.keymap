@@ -47,6 +47,12 @@
             layers = <BASE NAV>;
         };
 
+        middle_click_mouse_layer {
+            bindings = <&mkp MCLK>;
+            key-positions = <26 27>;
+            layers = <MOU>;
+        };
+
         bootloader_dongle_combo {
             bindings = <&bootloader>;
             key-positions = <31 32 33 34>;
@@ -300,9 +306,9 @@
             label = "Mou";
             bindings = <
         
-            &none    &none    &none    &none    &none            &none    &none    &none    &none    &none
-            &none    &none    &none    &none    &none            &none    &none    &none    &none    &none
-            &none    &none    &none    &none    &none            &none    &none    &none    &none    &none
+            &none    &none    &none    &none    &none            &none        &none        &none        &none      &none
+            &none    &none    &none    &none    &none            &none        &none        &none        &none      &none
+            &none    &none    &none    &none    &none            &mkp MCLK    &mkp LCLK    &mkp RCLK    &mo SCR    &none
         
                               &none    &none    &none            &none    &none
         
@@ -312,13 +318,13 @@
         Scroll {
             label = "Scr";
             bindings = <
-
-            &trans    &trans    &trans       &trans       &trans            &trans    &trans       &trans       &trans    &trans
-            &trans    &trans    &mkp RCLK    &mkp LCLK    &trans            &trans    &mkp LCLK    &mkp RCLK    &trans    &trans
-            &trans    &trans    &trans       &trans       &trans            &trans    &trans       &trans       &trans    &trans
         
-                                &trans       &trans       &trans            &trans    &trans
-            
+            &none    &none    &none    &none    &none            &none    &none    &none    &none    &none
+            &none    &none    &none    &none    &none            &none    &none    &none    &none    &none
+            &none    &none    &none    &none    &none            &none    &none    &none    &none    &none
+        
+                              &none    &none    &none            &none    &none
+        
             >;
         };
     };
