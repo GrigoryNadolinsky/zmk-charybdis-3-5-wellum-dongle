@@ -47,10 +47,10 @@
             layers = <BASE NAV>;
         };
 
-        middle_click_mouse_layer {
+        middle_click_mouse_scroll_layer {
             bindings = <&mkp MCLK>;
             key-positions = <26 27>;
-            layers = <MOU>;
+            layers = <MOU SCR>;
         };
 
         bootloader_dongle_combo {
@@ -265,11 +265,11 @@
             label = "Bas";
             bindings = <
 
-            &kp Q         &kp W         &kp E          &kp R          &ht RA(T) T                       &kp Y        &kp U                &ht RA(I) I    &kp O         &kp P
-            &ht LGUI A    &ht LALT S    &ht LCTRL D    &ht LSHFT F    &kp G                             &kp H        &ht LSHFT J          &ht LCTRL K    &ht LALT L    &ht LGUI SEMICOLON
-            &kp Z         &kp X         &kp C          &kp V          &kp B                             &kp N        &ht RA(M) M          &kp COMMA      &kp DOT       &lt_slow MOU SLASH
+            &kp Q         &kp W         &kp E          &kp R          &ht RA(T) T                       &kp Y        &kp U                &ht RA(I) I    &kp O               &kp P
+            &ht LGUI A    &ht LALT S    &ht LCTRL D    &ht LSHFT F    &kp G                             &kp H        &ht LSHFT J          &ht LCTRL K    &ht LALT L          &ht LGUI SEMICOLON
+            &kp Z         &kp X         &kp C          &kp V          &kp B                             &kp N        &ht RA(M) M          &kp COMMA      &lt_slow SCR DOT    &lt_slow MOU SLASH
 
-                                               &kp ESCAPE     &lt SYM TAB    &double_space_to_comma            &kp ENTER    &lt NAV BACKSPACE    
+                                        &kp ESCAPE     &lt SYM TAB    &double_space_to_comma            &kp ENTER    &lt NAV BACKSPACE    
             
             >;
         };
@@ -343,9 +343,9 @@
             label = "Scr";
             bindings = <
         
-            &none    &none    &none    &none    &none            &none    &none    &none    &none    &none
-            &none    &none    &none    &none    &none            &none    &none    &none    &none    &none
-            &none    &none    &none    &none    &none            &none    &none    &none    &none    &none
+            &none    &none    &none    &none    &none            &none        &none        &none        &none    &none
+            &none    &none    &none    &none    &none            &none        &none        &none        &none    &none
+            &none    &none    &none    &none    &none            &mkp MCLK    &mkp LCLK    &mkp RCLK    &none    &mo MOU
         
                               &none    &none    &none            &none    &none
         
